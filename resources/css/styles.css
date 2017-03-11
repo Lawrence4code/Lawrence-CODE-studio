@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------*/
+/* BASIC SETUP */
+/* ------------------------------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +17,111 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* ------------------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------------------------------*/
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------*/
+/* HEADER */
+/* ------------------------------------------------------------------------*/
+
+
+header {
+  background-image: url(/resources/img/farm.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 800px;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 10px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-size: 90%;
+  font-style: italic;
+  border-bottom: 1px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 1px solid #d65050;
+  transition: border-bottom 0.2s;
+}
+
+/* ------------HEADINGS------------*/
+
+h1 {
+  margin: 0;
+  font-size: 290%;
+  color: #fff;
+  word-spacing: 5px;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto 0;
+    border-bottom: 1px solid #d65050;
+}
+
+/* ------------BUTTONS------------*/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  background-color: #d65050;
+  border: 1px solid #d65050;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 80%;
+  font-style: italic;
+}
+
+.btn-hero:hover,
+.btn-hero:active {
+  background-color: transparent;
+  border: 1px solid #d65050;
+  color: #d65050;
+  margin-top: 40px;
 }
